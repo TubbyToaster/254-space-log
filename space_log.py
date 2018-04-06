@@ -13,7 +13,7 @@ try:
 except IndexError:
 	exit("Missing name of log file.")
 except:
-	exit("Couldn't open file \""+sys.argv[1]+"\".")
+	exit("Couldn't open file \""+argv[1]+"\".")
 
 # Uncomment, and add your work in the appropriate spots.
 argSwitcher = {
@@ -29,4 +29,9 @@ try:
 except IndexError:
 	exit("Missing search argument.")
 
-print(func(content))
+output = func(content)
+if type(output) is list:
+	for l in output:
+		print(l)
+else:
+	print(output)

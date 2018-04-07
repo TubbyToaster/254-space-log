@@ -4,8 +4,11 @@
 
 from sys import argv
 import fuel
-import light_years
+
+import planets
+import starsystems
 import terraform
+import light_years
 
 # Opens the log file and grabs the contents.
 try:
@@ -19,8 +22,9 @@ except:
 
 # Uncomment, and add your work in the appropriate spots.
 argSwitcher = {
-#	'-s': NAMES OF SYSTEMS VISITED
-#	'-p': NAMES OF PLANETS SCANNED
+	'-s': starsystems.print_visited_starsystems,
+	'-p': planets.get_planet_names,
+
 	'-t': terraform.get_total_terraformable_planets,
 	'-d': light_years.get_total_light_years,
 	'-f': fuel.get_total_fuel,	# The example.

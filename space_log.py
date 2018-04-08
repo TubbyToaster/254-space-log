@@ -22,7 +22,7 @@ except:
 
 # Uncomment, and add your work in the appropriate spots.
 argSwitcher = {
-	'-s': starsystems.print_visited_starsystems,
+	'-s': starsystems.print_starsystems,
 	'-p': planets.get_planet_names,
 
 	'-t': terraform.get_total_terraformable_planets,

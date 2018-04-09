@@ -1,4 +1,4 @@
-# Created by Gary Kam
+# Gary Kam
 import re
 
 def get_total_light_years(content:str) -> float:

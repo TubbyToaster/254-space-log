@@ -24,7 +24,6 @@ except:
 argSwitcher = {
 	'-s': starsystems.print_starsystems,
 	'-p': planets.get_planet_names,
-
 	'-t': terraform.get_total_terraformable_planets,
 	'-d': light_years.get_total_light_years,
 	'-f': fuel.get_total_fuel,	# The example.
